@@ -13,7 +13,7 @@ export default defineConfig({
     modulePreload: {
       polyfill: false
     },
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
@@ -24,7 +24,9 @@ export default defineConfig({
         entryFileNames: `${staticDir}/[name].js`,
         chunkFileNames: `${staticDir}/js/[name].js`,
         assetFileNames: `${staticDir}/style/[name].[ext]`,
-      }
+        preserveModules: true
+      },
+      preserveEntrySignatures: "strict"
     }
   }
 });
