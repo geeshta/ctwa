@@ -5,6 +5,9 @@ import { resolve } from "path";
 const staticDir = "static";
 
 export default defineConfig({
+  server: {
+    port: 5173
+  },
   build: {
     minify: false,
     target: "es2020",
