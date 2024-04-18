@@ -8,13 +8,17 @@
 }
 
 :host a {
-    text-decoration: none;
-    color: var(--light-000);
+  background-color: var(--blue-700);
+  text-decoration: none;
+  padding: 5px;
+  color: var(--light-100);
+  border-bottom: 1px solid var(--light-700);
+  border-radius: 10%;
 }
 
 :host a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: var(--blue-000); /* Change color on hover */
+  text-decoration: underline;
+  color: var(--blue-000);
 }
 
 :host nav {

@@ -3,5 +3,8 @@
     --background-color: var(--dark-900);
     --text-color: var(--light-000);
     --sidebar-bg-color: var(--blue-900);
-    --footer-border-color: var(--light-900)
+    --footer-border-color: var(--light-900);
+    --footer-bg-color: var(--dark-700);
+    --link-color: var(--blue-000);
+    --link-color-hover: var(--blue-300);
 }

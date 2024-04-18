@@ -3,7 +3,10 @@
     --background-color: var(--light-000);
     --text-color: var(--dark-900);
     --sidebar-bg-color: var(--blue-000);
-    --footer-border-color: var(--dark-100)
+    --footer-border-color: var(--dark-100);
+    --footer-bg-color: var(--light-300);
+    --link-color: var(--blue-900);
+    --link-color-hover: var(--blue-900);
 }
 
 
