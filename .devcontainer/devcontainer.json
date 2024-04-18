@@ -6,11 +6,11 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "ms-vscode.makefile-tools",
-        "bierner.lit-html"
+        "bierner.lit-html",
+        "ritwickdey.liveserver"
       ]
     }
   },
-  "forwardPorts": [5173],
-  "remoteUser": "root",
+  "forwardPorts": [5173, 5500],
   "postCreateCommand": "make setup"
 }
