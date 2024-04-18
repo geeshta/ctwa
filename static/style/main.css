@@ -22,4 +22,13 @@ body {
   overflow-y: auto;
   background-color: var(--background-color);
   color: var(--text-color);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.content__article p {
+    max-width: 800px;
+    margin: 10px;
 }

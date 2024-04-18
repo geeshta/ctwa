@@ -7,6 +7,10 @@
     --footer-bg-color: var(--light-300);
     --link-color: var(--blue-900);
     --link-color-hover: var(--blue-900);
+    --side-link-bg-color: var(--blue-300);
+    --side-link-color: var(--light-000);
+    --side-link-color-hover: var(--light-300);
+    --side-link-border-color: var(--light-300);
 }
 
 
