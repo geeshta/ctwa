@@ -1,4 +1,4 @@
-setup: yarn_deps install_fish
+setup: yarn_deps install_fish upgrade_os
 
 yarn_deps:
 	yarn install
@@ -10,4 +10,7 @@ install_fish:
 	apt install -y fish
 	chsh -s /usr/bin/fish root
 
-.PHONY: setup yarn_deps install_fish
+upgrade_os:
+	apt update && apt -y full-upgrade && apt -y autoremove
+
+.PHONY: setup yarn_deps install_fish upgrade_os

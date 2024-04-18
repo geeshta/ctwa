@@ -5,8 +5,8 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "monosans.djlint",
-        "ms-vscode.makefile-tools"
+        "ms-vscode.makefile-tools",
+        "bierner.lit-html"
       ]
     }
   },

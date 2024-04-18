@@ -1,7 +1,7 @@
 const html = (strings, ...values) =>
   strings.reduce((acc, str, i) => `${acc}${str}${values[i] || ""}`, "");
 
-let createComponent = ({ tagName, templateString, styleFileName = null }) => {
+const createComponent = ({ tagName, templateString, styleFileName = null }) => {
   if (styleFileName) {
     const styleLink = `<link rel="stylesheet" href="/static/style/${styleFileName}" />`;
     templateString = styleLink + templateString;
@@ -29,6 +29,7 @@ createComponent({
       <a href="/site/integration.html">Propojení</a>
       <a href="/site/about.html">O nás</a>
     </nav>
+    <slot name="after-nav"></slot>
   `
 });
 
