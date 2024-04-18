@@ -38,7 +38,11 @@ createComponent({
 createComponent({
   tagName: "gopay-footer",
   cssFileName: "footer",
-  templateString: html` <footer>2024</footer> `
+  templateString: html`
+    <footer>
+      Vytvořil <a href="https://github.com/geeshta">Štefan Földesi</a> pro EF JČU | 2024
+    </footer>
+  `
 });
 
 createComponent({
