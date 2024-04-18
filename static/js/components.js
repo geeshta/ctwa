@@ -1,27 +1,28 @@
-const html = (strings, ...values) =>
-  strings.reduce((acc, str, i) => `${acc}${str}${values[i] || ""}`, "");
+import { createComponent, html } from "./create_component";
+import { getThemePath, switchDarkValue } from "./theme";
 
-const createComponent = ({ tagName, templateString, styleFileName = null }) => {
-  if (styleFileName) {
-    const styleLink = `<link rel="stylesheet" href="/static/style/${styleFileName}" />`;
-    templateString = styleLink + templateString;
-  }
+createComponent({
+  tagName: "stretch-separator",
+  cssFileName: "separator",
+  templateString: html``
+});
 
-  const cls = class WebComponent extends HTMLElement {
-    constructor() {
-      super();
-      const template = document.createElement("template");
-      template.innerHTML = templateString;
-      this.attachShadow({ mode: "open" });
-      this.shadowRoot.appendChild(template.content.cloneNode(true));
+createComponent({
+  tagName: "theme-button",
+  cssFileName: "themebutton",
+  templateString: html` <button>Přepnout barvu</button> `,
+  eventListeners: {
+    click: () => {
+      const themePath = getThemePath(switchDarkValue());
+      const themeLink = document.querySelector("#theme-css");
+      themeLink.href = themePath + "theme.css";
     }
-  };
-
-  customElements.define(tagName, cls);
-};
+  }
+});
 
 createComponent({
   tagName: "gopay-header",
+  cssFileName: "header",
   templateString: html`
     <nav>
       <a href="/index.html">Úvod</a>
@@ -29,31 +30,26 @@ createComponent({
       <a href="/site/integration.html">Propojení</a>
       <a href="/site/about.html">O nás</a>
     </nav>
-    <slot name="after-nav"></slot>
+    <stretch-separator></stretch-separator>
+    <theme-button></theme-button>
   `
 });
 
 createComponent({
   tagName: "gopay-footer",
-  templateString: html`
-    <footer>
-      <hr />
-      2024
-    </footer>
-  `
+  cssFileName: "footer",
+  templateString: html` <footer>2024</footer> `
 });
 
 createComponent({
   tagName: "side-bar",
-  styleFileName: "sidebar.css",
+  cssFileName: "sidebar",
   templateString: html`
     <aside class="sidebar">
-      <ul>
-        <li>Opakované platby</li>
-        <li>Uložené karty</li>
-        <li>Aktualizace karet</li>
-        <li>Ověření nulové částky</li>
-      </ul>
+      <div class="sidebar__item">Opakované platby</div>
+      <div class="sidebar__item">Uložené karty</div>
+      <div class="sidebar__item">Aktualizace karet</div>
+      <div class="sidebar__item">Ověření nulové částky</div>
     </aside>
   `
 });

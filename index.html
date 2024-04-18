@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="/static/style/common.css" />
     <link rel="stylesheet" href="/static/style/layout.css" />
     <link rel="stylesheet" href="/static/style/palette.css" />
-    <link rel="preload" href="/static/style/theme-dark.css" as="style" />
-    <link rel="preload" href="/static/style/theme-light.css" as="style" />
-    <link rel="stylesheet" href="/static/style/colors.css" />
+    <link rel="preload" href="/static/style/dark/theme.css" as="style" />
+    <link rel="preload" href="/static/style/light/theme.css" as="style" />
+    <link rel="stylesheet" href="/static/style/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +16,13 @@
       rel="stylesheet"
     />
     <script type="module" src="/static/js/components.js" defer></script>
-    <script type="module" src="/static/js/themeswitcher.js" defer></script>
+    <script type="module" src="/static/js/main.js" defer></script>
     <title>GoPay</title>
   </head>
   <body>
-    <gopay-header class="header">
-      <button id="theme-toggle" slot="after-nav">Přepnout barvu</button>
-    </gopay-header>
+    <gopay-header class="header"> </gopay-header>
     <div class="main">
-      <side-bar class="sidebar"></side-bar>
+      <side-bar></side-bar>
       <main class="content">
         <h1 slot="content">Vítejte v GoPay!</h1>
       </main>

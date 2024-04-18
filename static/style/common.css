@@ -5,8 +5,4 @@
     font-family: "Roboto";
 }
 
-body {
-    display: flex; /* Use flexbox to arrange child elements */
-    flex-direction: column;
-}
 

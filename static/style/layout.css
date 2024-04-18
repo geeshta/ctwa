@@ -1,38 +1,41 @@
+body {
+    display: flex; /* Use flexbox to arrange child elements */
+    flex-direction: column;
+}
+
 .header {
-    height: 50px; /* Fixed height */
-    width: 100%; /* Full width */
-    /* Add some padding and styling */
+    height: 50px;
+    width: 100%;
     padding: 10px 15px;
     display: flex;
     align-items: center;
 }
 
 .main {
-    display: flex; /* Use flexbox to arrange child elements */
-    flex: 1; /* Take up all available space */
-    min-height: calc(100vh - 100px); /* Subtract the height of navbar and footer */
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 100px);
 }
 
 .sidebar {
-    width: 200px; /* Fixed width */
-    /* Take up the full height available */
-    flex-shrink: 0; /* Prevent flexbox from shrinking this item */
+    width: 200px;
+    flex-shrink: 0;
     padding: 15px;
 }
 
 .content {
-    flex: 1; /* Take up the remaining space */
+    flex: 1;
     padding: 20px;
-    overflow-y: auto; /* Add scroll if content overflows */
+    overflow-y: auto;
 }
 
 .footer {
-    height: 50px; /* Fixed height */
-    width: 100%; /* Full width */
-    /* Add some padding and styling */
+    height: 50px;
+    width: 100%;
     padding: 10px 15px;
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 0;
 }
+

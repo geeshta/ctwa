@@ -1,0 +1,17 @@
+:host {
+  background-color: var(--sidebar-bg-color);
+  color: var(--text-color);
+}
+
+:host .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 15px;
+}
+
+:host .sidebar__item {
+  border: 1px solid;
+}

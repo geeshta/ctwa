@@ -1,0 +1,9 @@
+/* light theme */
+:root {
+    --background-color: var(--light-000);
+    --text-color: var(--dark-900);
+    --sidebar-bg-color: var(--blue-000);
+    --footer-border-color: var(--dark-100)
+}
+
+
