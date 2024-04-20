@@ -38,3 +38,8 @@ body {
     flex-flow: column;
     gap: 10px;
 }
+
+.btn-blue {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+}

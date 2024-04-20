@@ -1,14 +1,18 @@
 /* dark theme */
 :root {
-    --background-color: var(--dark-900);
-    --text-color: var(--light-000);
-    --sidebar-bg-color: var(--blue-900);
-    --footer-border-color: var(--light-900);
-    --footer-bg-color: var(--dark-700);
-    --link-color: var(--blue-000);
-    --link-color-hover: var(--blue-300);
-    --side-link-bg-color: var(--blue-500);
-    --side-link-color: var(--light-100);
-    --side-link-color-hover: var(--blue-000);
-    --side-link-border-color: var(--dark-000);
+  --background-color: var(--dark-900);
+  --text-color: var(--light-000);
+  --sidebar-bg-color: var(--blue-900);
+  --footer-border-color: var(--light-900);
+  --footer-bg-color: var(--dark-700);
+  --link-color: var(--blue-000);
+  --link-color-hover: var(--blue-300);
+  --side-link-bg-color: var(--blue-500);
+  --side-link-color: var(--light-100);
+  --side-link-color-hover: var(--blue-000);
+  --side-link-border-color: var(--dark-000);
+  --form-input-bg-color: var(--dark-700);
+  --form-input-color: var(--light-000);
+  --btn-bg-color: var(--blue-500);
+  --btn-color: var(--light-000);
 }

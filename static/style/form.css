@@ -1,0 +1,5 @@
+input[type="email"].form-input,
+textarea.form-input {
+  background-color: var(--form-input-bg-color);
+  color: var(--form-input-color);
+}
