@@ -14,7 +14,8 @@
   --form-input-bg-color: var(--light-100);
   --form-input-color: var(--dark-900);
   --btn-bg-color: var(--blue-100);
-  --btn-color: var(--light-000);
+  --btn-hover-bg-color: var(--blue-300);
+  --btn-border-color: var(--dark-000);
 }
 
 

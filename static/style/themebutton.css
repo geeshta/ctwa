@@ -1,0 +1,11 @@
+:host button {
+  background-color: var(--dark-900);
+  color: var(--light-000);
+  border: 1px transparent;
+  border-radius: 10%;
+  padding: 5px;
+}
+
+:host button:hover {
+  background-color: var(--dark-700);
+}
