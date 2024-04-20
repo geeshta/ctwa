@@ -22,6 +22,14 @@
     <div class="main">
       <main class="content">
         <h1 slot="content">Kontaktujte nás</h1>
+        <form id="contact-form" class="form-container" method="post">
+          <label for="contact-email">Vaše Emailová Adresa:</label>
+          <input name="email" type="email" id="contact-email" required />
+          <label for="contact-message">Vaše Zpráva:</label>
+          <textarea rows="10" cols="50" name="message" id="contact-message"></textarea>
+          <button type="submit">Odeslat</button>
+          <script type="module" src="/static/js/form.js" defer></script>
+        </form>
       </main>
     </div>
     <gopay-footer></gopay-footer>

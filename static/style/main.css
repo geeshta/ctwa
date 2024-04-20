@@ -32,3 +32,9 @@ body {
     max-width: 800px;
     margin: 10px;
 }
+
+.form-container {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}

@@ -13,4 +13,7 @@ install_fish:
 upgrade_os:
 	apt update && apt -y full-upgrade && apt -y autoremove
 
+reown:
+	sudo chown -R $(USER):$(USER) *
+
 .PHONY: setup yarn_deps install_fish upgrade_os
