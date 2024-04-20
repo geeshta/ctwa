@@ -25,7 +25,6 @@ createComponent({
   cssFileName: "header",
   templateString: html`
     <nav>
-      <a href="/index.html">Úvod</a>
       <a href="/gw/recurrence.html">Platební brána</a>
       <a href="/contact.html">Kontaktujte nás</a>
     </nav>
@@ -50,6 +49,7 @@ createComponent({
   cssFileName: "sidebar",
   templateString: html`
     <aside class="sidebar">
+      <a class="sidebar__item" href="/index.html">Úvod</a>
       <a class="sidebar__item" href="/gw/recurrence.html">Opakované platby</a>
       <a class="sidebar__item" href="/gw/cardtoken.html">Uložené karty</a>
       <a class="sidebar__item" href="/gw/accountupdater.html">Aktualizace karet</a>
